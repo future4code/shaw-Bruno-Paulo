@@ -7,6 +7,8 @@
 //1- a-Ele retornou com "Object", acredito que ele enviou assim porque não tinha nenhum valor
 //1-b agora que pedi para o usuario colocar dados, veio como string pois não converti para outros tipos
 
+//<<<<<<< operadores
+//=======
 var nome;
 var idade;
 prompt(nome,"Qual é seu nome?")
@@ -31,3 +33,4 @@ let c = a
 a = b
 b = c
 console.log(a,b)
+//>>>>>>> master
