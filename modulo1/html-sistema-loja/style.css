@@ -1,0 +1,37 @@
+.imagemrodape{
+    width: 5vh;
+}
+
+.menu{
+    background-color: yellow;
+    width: 60%;
+}
+
+a{
+    margin-left: 30px;
+}
+
+.cabecalho{
+    background-color: yellowgreen;
+    width: 60%;
+}
+
+.rodape{
+    background-color: gray;
+    width: 60%;
+}
+
+.produtos{
+    border-style: solid;
+}
+
+.produtos2{
+    border-style: solid;
+    width: 20%;
+    border-color: grey;
+}
+
+.segundostyle{
+    background-color:orangered;
+    width: 60%;
+}
