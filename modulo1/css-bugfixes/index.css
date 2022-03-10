@@ -143,6 +143,7 @@ td button {
 
 #tabela{
     text-align: center;
+    margin-left: 22%;
 }
 
 table img{
@@ -174,7 +175,7 @@ table img{
     src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
          url('Roboto-ThinItalic-webfont.woff') format('woff'),
          url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
-         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); (under the Apache Software License). 
+         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); 
     font-weight: 200;
     font-style: italic;
 }
