@@ -161,3 +161,20 @@ table img{
 #caixaTexto{
     border-bottom-width: 3px;
 }
+
+*{
+    font-style: 'Roboto', sans-serif;
+    font-size: 16px;
+
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-ThinItalic-webfont.eot');
+    src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-ThinItalic-webfont.woff') format('woff'),
+         url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
+         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); (under the Apache Software License). 
+    font-weight: 200;
+    font-style: italic;
+}
