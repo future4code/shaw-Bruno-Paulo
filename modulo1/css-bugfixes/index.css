@@ -132,3 +132,8 @@ td button {
 #back-button:hover {
     background-color: #635a3d
 }
+
+#pDoAzul{
+    margin-top: 50px;
+    display: inline-block;
+}
