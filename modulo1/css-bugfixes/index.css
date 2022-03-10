@@ -60,7 +60,10 @@ div img {
 }
 
 .icone {
-    height: 15px;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    margin-top: 20px;
 }
 
 
@@ -142,7 +145,8 @@ td button {
     text-align: center;
 }
 
-img{
+table img{
     width: 70px;
     height: 70px;
 }
+
