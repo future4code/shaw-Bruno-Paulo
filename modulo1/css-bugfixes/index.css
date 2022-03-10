@@ -49,6 +49,10 @@ div img {
 .botao-amarelo:hover {
     background-color: #c44f00;
 }
+.botao-amarelo{
+    display: block;
+    margin-left: 40%;
+}
 
 .container {
     height: 500px;
