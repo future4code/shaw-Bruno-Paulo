@@ -150,3 +150,10 @@ table img{
     height: 70px;
 }
 
+.botaoComprar:active {
+    color: white;
+}
+
+.botaoComprar:hover {
+    background-color: #c44f00;
+}
