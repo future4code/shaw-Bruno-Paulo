@@ -157,3 +157,7 @@ table img{
 .botaoComprar:hover {
     background-color: #c44f00;
 }
+
+#caixaTexto{
+    border-bottom-width: 3px;
+}
