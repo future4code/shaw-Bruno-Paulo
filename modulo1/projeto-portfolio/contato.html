@@ -9,12 +9,60 @@
     <script src="index.js" defer></script>
 </head>
 <body>
-    <table>
-        <tr>
-            <td><a href="index.html">Inicio</a></td>
-            <td><a href="portifolio.html">Portifólio</a></td>
-            <td><a href="contato.html">Contato</a></td>
-        </tr>
-    </table>
+    <div id="menu">
+        <table id="menu-dentro">
+            <tr>
+                <td><a href="index.html" class="font-menu">Inicio</a></td>
+                <td><a href="portifolio.html" class="font-menu">Portifólio</a></td>
+                <td><a href="contato.html" class="font-menu">Contato</a></td>
+            </tr>
+        </table>
+    </div>
+    <hr id="division">
+    <br>
+    <br>
+    <h2 class="center">Para entrar em contato deixe seu contato a baixo:</h2>
+    <br><br>
+    <div id="area">
+        <form id="formulario" autocomplete="off">
+          <fieldset>
+            <legend>Formulário</legend>
+            <label>Nome:</label><input class="campo_nome" type="text"><br>
+            <label>Email:</label><input class="campo_email" type="password"><br>
+            <label>Mensagem:</label><br><textarea class="msg" cols="35" rows="8"></textarea><br>
+            <input class="btn_submit" type="submit" value="Enviar">
+          </fieldset>
+        </form>
+      </div>
+        <br><br><br>
+        <div id="contatos">
+            <h2 class="center">Ou entre em contato pelas redes sociais:</h2>
+            <a href=""><img src="/img/insta.png" alt="Instagam" class="JsImg"></a>
+            <a href=""><img src="/img/linkedin-.png" alt="Linkedin" class="JsImg"></a>
+            <a href=""><img src="/img/Gmail.png" alt="Email" class="JsImg"></a>
+            <a href=""><img src="/img/git.png" alt="Github" class="JsImg"></a>
+        </div>
+        <br><br><br><br>
+        <footer class="footer-container">
+            <div id="div1">
+                <table>
+                    <tr>
+                        <td><img src="/img/foto.jpg" alt="Foto Bruno" width="100px" id="fotob"></td>
+                        <td id="idtable"><p id="paragrafop">Bruno Siqueira, desenvolverdor Full Stack <br> para mais informações entre em contato</p>
+                            <a href="contato.html"><button type="button" id="button-contact">Contato</button></a></td>
+                    </tr>
+                </table>
+                    
+                    
+            </div>
+            <!-- dhuashduash -->
+            <div id="div2">
+                <h4 id="h4">Redes Sociais:</h4>
+                <a href="" class="footer-image"><img src="/img/insta.png" alt="Instagram" class="footer-image"></a>
+                <a href="" class="footer-image"><img src="/img/linkedin-.png" alt="Linkedin" class="footer-image"></a>
+                <a href="" class="footer-image"><img src="/img/git.png" alt="Github" class="footer-image"></a>
+                <a href="" class="footer-image"><img src="/img/Gmail.png" alt="Gmail" class="footer-image"></a>
+            </div>
+        </footer>
 </body>
 </html>

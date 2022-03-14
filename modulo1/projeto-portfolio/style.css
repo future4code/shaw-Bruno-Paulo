@@ -1,4 +1,240 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body, html{
+    height: 100%;
+}
 #fotoBruno {
     width: 250px;
     display:inline;
+}
+
+.JsImg{
+    width: 175px;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+.footer-container{
+    background-color: #222;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-image{
+    width: 50px;
+}
+
+#button-contact{
+    float: right;
+    margin-right: 120px;
+    margin-top:  15px;
+    background: forestgreen;
+
+    color: white;
+    
+    border-style: outset;
+    
+    border-color: forestgreen;
+    
+    height: 50px;
+    
+    width: 100px;
+    
+    font: bold 15px arial, sans-serif;
+    
+    text-shadow:none;
+}
+
+#button-contact:hover{
+    cursor: pointer;
+}
+
+#div1{
+
+    width: 48%;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+#div2{
+    width: 35%;
+    float: right;
+    display: inline-block;
+    padding-top: 15px;
+    margin-left: 10px;
+}
+
+#fotob{
+    display: flex;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#paragrafop{
+    color: white;
+}
+
+#idtable{
+    padding-left: 20px;
+}
+
+#h4{
+    color: white;
+}
+
+.font-color{
+    color: #222;
+}
+
+#portifolios{
+    justify-content: center;
+    text-align: center;
+}
+
+#introdução{
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    display: inline-block;
+
+}
+
+#divmaior{
+    justify-content: center;
+    text-align: center;
+}
+
+#menu{
+    justify-content: center;
+    text-align: center;
+}
+
+#menu-dentro{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.font-menu{
+    margin-right: 15px;
+}
+
+.font-menu:link{
+    text-decoration: none;
+    color:forestgreen;
+}
+.font-menu:visited{
+    color: forestgreen;
+    text-decoration: none;
+}
+
+.font-menu:hover{
+    background-color: forestgreen;
+    color: white;
+}
+
+.font-menu{
+    display: inline-block;
+    width: 120px;
+}
+
+.link-simples:link{
+    color:forestgreen;
+    text-decoration: none;
+}
+
+.link-simples:visited{
+    color: forestgreen;
+    text-decoration: none;
+}
+
+#juntas{
+    width: 600px;
+    border: 2px solid forestgreen;
+}
+
+#division{
+    background-color: forestgreen;
+    opacity: 40%;
+}
+
+
+.center{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.toda-tela{
+    width: 100%;
+}
+
+#area
+{
+  position:relative;
+  left:37%;
+  top:0%;
+  width:340px;
+  height:270px;
+  
+}
+#area #formulario
+{
+  position:absolute;
+  display:block;
+}
+fieldset
+{
+  width:320px;
+  height:250px;
+}
+
+
+
+legend
+{
+  font-style:bold;
+  font-family: "Segoe UI";
+}
+#formulario label
+{
+  position:absolute;
+  left:25px;
+  margin-right:5px;
+}
+
+
+#formulario input.campo_nome
+{
+  position:absolute;
+  left:80px;
+  top:23px;
+  width:225px;
+}
+#formulario input.campo_email
+{
+  position:absolute;
+  left:80px;
+  margin-top:2px;
+  width:225px;
+}
+
+#contatos{
+    justify-content: center;
+    text-align: center;
+}
+
+.icon-p{
+    width: 100px;
 }
