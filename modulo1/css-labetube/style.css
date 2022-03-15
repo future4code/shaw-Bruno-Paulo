@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+}
+
+.header1{
+    width: 100vw;
+    height: 12vh;
+    background-color: #ef843a;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+#barra-pesquisa{
+    width: 8vw;
+    height: 4vh;
+    border: none;
+    margin-right: 50px;
+}
+
+.div-footer{
+    background-color: #323b3e;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 100vw;
+    height: 1000px;
+    justify-content: center;
+    display: flex;
+    padding-top: 4vh;
+}
+
+.videos-grid{
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 2;
+    row-gap: 20px;
+    column-gap: 20px;
+    width: 95vw;
+    height: 60vh;
+}
+
+.imagem-video{
+    width: 250px;
+    height: 200px;
+}
+
+.cedula1{
+    grid-column:1;
+    grid-row: 1;
+    text-align: center;
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+}
+
+.cedula2{
+    grid-column:2;
+    grid-row: 1;
+    text-align: center;
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+}
+
+.cedula3{
+    grid-column:3;
+    grid-row: 1;
+    text-align: center;
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+}
+
+.cedula4{
+    grid-column:4;
+    grid-row: 1;
+    text-align: center;
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+}
+
+.cedula5{
+    grid-column:1;
+    grid-row: 2;
+    text-align: center;
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+}
+
+.cedula6{
+    grid-column:2;
+    grid-row: 2;
+    text-align: center;
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+}
+
+.cedula7{
+    grid-column:3;
+    grid-row: 2;
+    text-align: center;
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+}
+
+.celula8{
+    grid-column:4;
+    grid-row: 2;
+    text-align: center;
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+}
+
+.h3{
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 90vw;
+    margin-bottom: 30vh;
+    margin-top: 0;
+}
+
+.h1{
+    text-align:start;
+    padding-top: 5%;
+    padding-left: 20px;
+    padding-bottom: 2%;
+}
