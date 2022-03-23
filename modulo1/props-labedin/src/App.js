@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import { CardPequenos } from './components/CardPequeno/CardPequeno';
-import CardPequenob from './components/CardPequeno/CardPequeno';
-import { CardGrandes } from './components/CardGrande/CardGrande';
-import CardGrandeb from './components/CardGrande/CardGrande';
-import { ImagemButtons } from './components/ImagemButton/ImagemButton';
-import ImagemButtonb from './components/ImagemButton/ImagemButton';
+import { CardPequenos } from './components/Style/Style';
+import CardPequenob from './components/Style/Style';
+import { CardGrandes } from './components/Style/Style';
+import CardGrandeb from './components/Style/Style';
+import { ImagemButtons } from './components/Style/Style';
+import ImagemButtonb from './components/Style/Style';
 function App() {
   return (
     <div className="App">
