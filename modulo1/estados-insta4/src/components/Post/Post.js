@@ -7,6 +7,7 @@ import iconeCoracaoBranco from '../../img/favorite-white.svg'
 import iconeCoracaoPreto from '../../img/favorite.svg'
 import iconeComentario from '../../img/comment_icon.svg'
 import {SecaoComentario} from '../SecaoComentario/SecaoComentario'
+import App from '../../App'
 
 const PostContainer = styled.div`
   border: 1px solid gray;
@@ -93,11 +94,11 @@ class Post extends React.Component {
 
     return <PostContainer>
       <PostHeader>
-        <UserPhoto src={this.props.fotoUsuario} alt={'Imagem do usuario'}/>
-        <p>{this.props.nomeUsuario}</p>
+        <UserPhoto src={this.props.fotoU} alt={'Imagem do usuario'}/>
+        <p>{this.props.nomeU}</p>
       </PostHeader>
 
-      <PostPhoto src={this.props.fotoPost} alt={'Imagem do post'}/>
+      <PostPhoto src={this.props.fotoP} alt={'Imagem do post'}/>
 
       <PostFooter>
         <IconeComContador
