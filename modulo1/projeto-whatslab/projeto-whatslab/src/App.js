@@ -1,43 +1,38 @@
 import logo from './logo.svg';
 import './App.css';
 import styled from 'styled-components';
-import BarraDeEnvio from './Components/BarraDeEnvioA';
 import React from 'react';
+import Forms from './Components/Forms';
+import Header from './Components/Header';
 
-const Container = styled.div`
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+const MainContainer = styled.div`
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+  min-height: 99.7vh;
+`;
+
+const SubContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 50%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
 `
 
-const ContainerDentro = styled.div`
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 60%;
-    border: 1px solid black;
-`
 
 
-
-class App extends React.Component {
-  state = {
-    Usuario: '',
-    Mensagem: ''
-
-  };
+class App extends React.Component{
   render(){
     return (
-      <div className="App">
-        <Container>
-          <h1>Oi CARA de ABA</h1>
-          <ContainerDentro>
-          <BarraDeEnvio></BarraDeEnvio>
-          </ContainerDentro>
-        </Container>
-      </div>
+      <MainContainer>
+        <SubContainer>
+          <Header></Header>
+          <Forms></Forms>
+        </SubContainer>
+      </MainContainer>
     );
   }
 }
