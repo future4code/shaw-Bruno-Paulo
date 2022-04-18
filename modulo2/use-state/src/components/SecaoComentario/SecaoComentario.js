@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import React, { useState } from 'react'
 
-const [secaoComentario,setSecaoComentario] = ""
 
 const CommentContainer = styled.div`
     display: flex;
@@ -15,6 +14,7 @@ const InputComment = styled.input `
 `
 
 const SecaoComentario = (props) => {
+	const [secaoComentario,setSecaoComentario] = useState("")
 
 
 	const onChangeComentario = (event) => {
