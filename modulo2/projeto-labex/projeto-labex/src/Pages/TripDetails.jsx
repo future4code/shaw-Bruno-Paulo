@@ -1,10 +1,17 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components'
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
+import { Details } from '../Components/lists/List';
 
 const MainContainer = styled.div`
 `
+const Container = styled.div`
+`
+
+const Title = styled.p`
+`
+
 
 function TripDetails(){
     
@@ -29,14 +36,20 @@ function TripDetails(){
             }
         })
          .then((response)=>{
-             console.log(response.data)
          }).catch((error)=>{
              console.log(error.response)
          })
     },[])
+    
+    const onClickReturn = () =>{
+        navigate(-1)
+    }
 
     return(
-        <MainContainer>TripDetails</MainContainer>
+        <MainContainer>
+            <button onClick={onClickReturn}>Voltar</button>
+            <Details/>
+        </MainContainer>
     )
 }
 
