@@ -24,8 +24,23 @@ min-height: 100%;
 height: 100vh;
 justify-self: center;
 background-color: #fff;
+@media screen and (max-width: 900px){
+    min-height: 896px;
+    height: 100vh; 
+    }
+@media screen and (max-width: 800px){
+min-height: 800px;
+height: 100vh; 
+}
+@media screen and (max-width: 700px){
+min-height: 700px;
+height: 100vh; 
+}
+@media screen and (max-width: 600px){
+min-height: 600px;
+height: 100vh; 
+}
 img{
-    position: relative;
     height: 40%;
 }
 input{
@@ -54,6 +69,9 @@ hr{
     font-size: 100%;
 }
 .button1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 87%;
     height: 25%;
     background: linear-gradient(90deg, #FF6489 0%, #F9B24E 100%);
@@ -62,14 +80,21 @@ hr{
     color: #fff;
     font-family: 'Noto Sans';
     font-weight: 700;
+    text-decoration: none;
     :hover{
         cursor: pointer;
     }
-    @media screen and (min-width: 1023px){
+    @media screen and (min-width: 900px){
         height: 35%;
+        :hover{
+            opacity: 0.8;
+        }
     }
 }
 .button2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 87%;
     height: 25%;
     background: #fff;
@@ -78,11 +103,17 @@ hr{
     font-family: 'Noto Sans';
     font-weight: 700;
     border: 1px solid #FE7E02;
+    text-decoration: none;
     :hover{
         cursor: pointer;
     }
-    @media screen and (min-width: 1023px){
+    @media screen and (min-width: 900px){
         height: 35%;
+        :hover{
+            background-color: #FE7E02;
+            opacity: 0.3;
+            color: #fff;
+        }
     }
 }
 .top{
@@ -91,7 +122,7 @@ hr{
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 25%;
+    height: 30%;
     p{
         margin: 0;
     }
@@ -104,7 +135,8 @@ hr{
     gap: 4%;
     width: 100%;
     height: 25%;
-    @media screen and (min-width: 1023px){
+    @media screen and (min-width: 900px){
+        height: 30%;
         gap: 8%;
     }
 }
@@ -116,6 +148,7 @@ hr{
     gap: 4%;
     width: 100%;
     height: 25%;
+    padding-bottom: 5%;
 }
 `
 
