@@ -58,6 +58,7 @@ hr{
 .button1{
     width: 100%;
     height: 25%;
+    min-height: 42px;
     background: linear-gradient(90deg, #FF6489 0%, #F9B24E 100%);
     border-radius: 27px;
     border: 0;
@@ -67,8 +68,12 @@ hr{
     :hover{
         cursor: pointer;
     }
-    @media screen and (min-width: 1023px){
+    @media screen and (min-width: 900px){
         height: 35%;
+        font-size: 1.5vw;
+        :hover{
+            opacity: 0.8;
+        }
     }
 }
 .top{
@@ -104,6 +109,7 @@ hr{
     border-radius: 4px;
     @media screen and (min-width: 1023px){
         height: 35%;
+        font-size: 1.3vw;
     }
 }
 }

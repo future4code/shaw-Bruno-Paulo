@@ -17,21 +17,28 @@ background-color: #EDEDED;
     justify-content: center;
     height: 100%;
     width: 100%;
+    z-index: 3;
     img{
         height: 70%;
+        justify-self: center;
     }
 }
 .right{
     display: flex;
     position: absolute;
+    padding-right: 5%;
+    right: 0;
+    z-index: 6;
     align-items: center;
     justify-content: flex-end;
     height: 100%;
-    width: 95%;
+    width: 70%;
     a{
         @media screen and (min-width: 901px){
+            font-size: 2vw;
             :hover{
                 opacity: 0.7;
+                cursor: pointer;
             }
         }
     }
@@ -44,6 +51,22 @@ background-color: #EDEDED;
     }
     .check{
 
+    }
+    .voltar{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 15%;
+    z-index: 5;
+    cursor: pointer;
+    @media screen and (min-width: 901px){
+        width: 6%;
+        }
+    svg{
+        height: 50%;
+    }
     }
 `
 

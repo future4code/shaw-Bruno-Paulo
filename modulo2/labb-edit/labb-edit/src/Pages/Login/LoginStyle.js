@@ -139,6 +139,11 @@ hr{
         height: 30%;
         gap: 8%;
     }
+    input{
+        @media screen and (min-width: 900px){
+            font-size: 1.3vw;
+    }
+    }
 }
 .bottom{
     display: flex;

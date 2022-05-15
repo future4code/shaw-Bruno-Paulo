@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router";
 import Header from "../../Components/Header/Header";
 import {MainContainer} from "./PostStyle"
+import PostCards from "../../Components/Cards/Cards";
 
 function Post(){
     const navigate = useNavigate()
@@ -12,14 +13,12 @@ function Post(){
         }else{
             
         }
+        localStorage.setItem('page', 'post')
     },[])
-    const click = () =>{
-        var string = window.location.href.split("=").pop();
-    }
     return(
         <MainContainer>
             <Header/>
-            <button onClick={click}>Click</button>
+            <PostCards/>
         </MainContainer>
     )
 }
