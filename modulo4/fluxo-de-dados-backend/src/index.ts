@@ -1,6 +1,6 @@
 import express from "express"
 import cors from "cors"
-import { users } from "./data"
+import { produtos } from "./data"
 
 const app = express()
 
@@ -9,85 +9,71 @@ app.use(express.json())
 
 app.listen(3003, () => console.log("Servidor disponível em 3003"))
 
-app.get("/playlists", (req, res) => {
-  // tenho todos os usuários
-  const currentUsers = users // array de objetos
-  console.log(1, currentUsers);
-
-  // Vou pegar as playlists de cada usuário
-  const userPlaylists = currentUsers.map((user: any) => {
-    return user.playlists 
-  }) // array de arrays
-  console.log(2, userPlaylists)
-
-  const result = userPlaylists.flat(1)
-
-  res.status(200).send(result);
+app.get("/test", (req, res) =>{
+  res.status(200).send("Está funcionando")
 })
 
-
-app.get("/tracks", (req, res) => {
-  const playlistId = req.query.id
-
-  if(!playlistId) res.status(400).send("Não é possível realizar a operação. ID da playlista ausente")
-
-  const allPlaylists = users.map((user: any) => {
-    return user.playlists
-  }).flat(1)
-
-  let tracks;
-
-  allPlaylists.forEach((playlist: any) => {
-    if (playlist.id === playlistId) {
-      tracks = playlist.tracks
+app.post("/add", (req ,res) =>{
+  try {
+    const {name , price} = req.body
+    if((!name || !price) || (typeof name != "string" || typeof price != "number") || (price < 0)){
+      throw new Error("Erro no body")
+    }else{
+      produtos.push({"id": JSON.stringify(Math.floor(Math.random() * 100)) ,"name": name, "price": price})
+      res.status(200).send(produtos)
     }
-  })
 
-  res.status(200).send(tracks)
+  } catch (error) {
+    res.status(422).end()
+  }
 })
 
-app.delete("/playlist", (req, res) => {
-  const id = req.query.id
-
-  users.forEach((user: any) => {
-    user.playlists = user.playlists.map((playlist: any) => {
-      if (playlist.id === id) {
-        return {}
-      }
-      return playlist
-    });
-  })
-
-  res.status(200).send(users)
+app.get("/all", (req, res) =>{
+  res.send(produtos)
 })
 
-app.delete("/track", (req, res) => {
-  const trackId = req.query.trackId
-  const playlistId = req.query.playlistId
-
-  const allPlaylists = users
-    .map((user: any) => {
-      return user.playlists;
+app.put("/edit-price", (req, res) =>{
+  try {
+    const {id, price} = req.body
+    const teste = produtos.find((produto: any) =>{
+      return produto.id == id
     })
-    .flat(1);
-  for (let i = 0; i <= allPlaylists.lenght; i++) {
-    allPlaylists[i]
-  }
 
-  for (let playlist of allPlaylists) {
-    playlist
-  }
+    if((!price || !id) || (typeof price != "number" || typeof id != "string") || (price < 0) || (!teste)){
+      throw new Error("Erro no body")
+    }else{
 
-  allPlaylists.forEach((playlist: any) => {
-    if (playlist.id === playlistId) {
-       playlist.tracks = playlist.tracks.map((track: any) => {
-         if (track.id === trackId) {
-           return {};
-         }
-         return track;
-       });
+    var newProdutos:any = produtos.map((produto:any) =>{
+      if(produto.id == id){
+          produto.price = price
+          return produto;
+      }else{
+        return produto;
+      }
+    })
+    
+    res.send(newProdutos)}
+    
+  } catch (error) {
+    res.status(422).end()
+  }
+})
+
+app.delete("/delete/:id", (req, res) =>{
+  try {
+    var teste = produtos.filter((produto:any) =>{
+      return produto.id == req.params.id
+    })
+    if((!req.params.id) || (!teste)){
+      throw new Error("Erro no parametro")
+    }else{
+      var newProdutos = produtos.filter((produto:any) =>{
+        return produto.id !== req.params.id
+      })
+    
+      res.send(newProdutos)
     }
-  })
-
-  res.status(200).send(allPlaylists)
+  } catch (error) {
+    res.status(422).end()
+  }
 })
